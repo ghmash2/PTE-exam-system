@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SstQuestionRepository extends JpaRepository<SstQuestion, Long> {
+
+    SstQuestion findByQuestionCode (String questionCode);
 }

@@ -6,9 +6,9 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum QuestionTypeEnum {
-    SUMMARIZE("SST", "Summarize Spoken Text"),
-    RE_ORDER("RO", "Re-Order Paragraph"),
-    MCQ("MCQ", "Reading Multiple Choice");
+    SUMMARIZE("sst", "Summarize Spoken Text"),
+    RE_ORDER("ro", "Re-Order Paragraph"),
+    MCQ("mcq", "Reading Multiple Choice");
 
     private String code;
     private String name;

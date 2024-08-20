@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RoQuestionRepository extends JpaRepository<RoQuestion, Long> {
+
+    RoQuestion findByQuestionCode (String questionCode);
 }
