@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "c2fa5b0f-2e51-4988-8e77-baf087277779",
+		"name": "PTE exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36964713"
+	},
+	"item": [
+		{
+			"name": "New",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get Questions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get/questions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get",
+								"questions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2024 13:21:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"title\": \"what is pte?\",\n        \"questionCode\": \"1\",\n        \"questionType\": \"mcq\",\n        \"id\": 1,\n        \"passage\": \"Do you know PTE exam?\",\n        \"optionA\": \"I know\",\n        \"optionB\": \"don't know\",\n        \"optionC\": \"maybe\",\n        \"optionD\": \"yes\",\n        \"answer\": \"d\"\n    },\n    {\n        \"title\": \"Why PTE?\",\n        \"questionCode\": \"2\",\n        \"questionType\": \"mcq\",\n        \"id\": 2,\n        \"passage\": \"Why should we need PTE?\",\n        \"optionA\": \"I know\",\n        \"optionB\": \"Don't know\",\n        \"optionC\": \"maybe\",\n        \"optionD\": \"No\",\n        \"answer\": \"b\"\n    }\n]"
+				},
+				{
+					"name": "Get QuestionDetails",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get/sstQuestion",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get",
+								"sstQuestion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2024 13:46:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"title\": \"SST question number 1.\",\n        \"questionCode\": \"3\",\n        \"questionType\": \"sst\",\n        \"id\": 1\n    },\n    {\n        \"title\": \"Next Question of sst\",\n        \"questionCode\": \"4\",\n        \"questionType\": \"sst\",\n        \"id\": 2\n    }\n]"
+				},
+				{
+					"name": "RoGET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get/roQuestion",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get",
+								"roQuestion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2024 13:47:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"title\": \"Rearrange paragraph\",\n        \"questionCode\": \"5\",\n        \"questionType\": \"ro\",\n        \"id\": 1,\n        \"unorderedSequence\": null,\n        \"orderedSequence\": null\n    },\n    {\n        \"title\": \"Rearrange paragraph part 2\",\n        \"questionCode\": \"6\",\n        \"questionType\": \"ro\",\n        \"id\": 2,\n        \"unorderedSequence\": null,\n        \"orderedSequence\": null\n    }\n]"
+				}
+			]
+		}
+	]
+}
